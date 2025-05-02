@@ -1,0 +1,10 @@
+package dev.tbvrln.clothes.repository;
+
+import dev.tbvrln.clothes.model.Cart;
+import org.hibernate.type.descriptor.converter.spi.JpaAttributeConverter;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface CartRepository extends JpaRepository<Cart, Long> {
+
+
+}
