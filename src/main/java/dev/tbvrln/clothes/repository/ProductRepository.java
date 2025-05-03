@@ -3,7 +3,9 @@ package dev.tbvrln.clothes.repository;
 import dev.tbvrln.clothes.model.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface ProductRepository extends JpaRepository<Product, Long> {
-        Product findByName(String name); // Correct method declaration
+import java.util.Optional;
 
+public interface ProductRepository extends JpaRepository<Product, Long> {
+        Optional<Product> findByName(String name); // corrected name and return type
 }
+
